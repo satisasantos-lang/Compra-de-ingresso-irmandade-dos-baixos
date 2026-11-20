@@ -1,0 +1,139 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Irmandade dos Baixos | Ingressos</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500;600;700&family=Orbitron:wght@500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header class="topbar">
+  <div class="logo">
+    <span class="logo-mark">IB</span>
+    <div>
+      <strong>IRMANDADE</strong>
+      <small>DOS BAIXOS</small>
+    </div>
+  </div>
+  <a href="#ingressos" class="nav-button">COMPRAR INGRESSO</a>
+</header>
+
+<section class="hero">
+  <div class="hero-content">
+    <span class="tag">EVENTOS AUTOMOTIVOS • BRASIL</span>
+    <h1>O GRAVE QUE<br><span>MOVE GERAÇÕES.</span></h1>
+    <p>Carros baixos, som, conexão e paixão automotiva.<br>
+    Faça parte da Irmandade.</p>
+    <a href="#ingressos" class="primary-button">GARANTA SEU INGRESSO ↗</a>
+  </div>
+</section>
+
+<section class="colors-strip">
+  <span></span><span></span><span></span><span></span>
+</section>
+
+<section class="event-section" id="ingressos">
+  <div class="section-heading">
+    <div>
+      <span class="tag">AGENDA OFICIAL</span>
+      <h2>PRÓXIMO EVENTO</h2>
+    </div>
+    <span class="status">● INGRESSOS DISPONÍVEIS</span>
+  </div>
+
+  <div class="event-card">
+    <div class="event-cover">
+      <div class="cover-overlay">
+        <span class="cover-label">IRMANDADE DOS BAIXOS APRESENTA</span>
+        <h2>ENCONTRO<br>AUTOMOTIVO</h2>
+        <p>ESTILO • SOM • CULTURA</p>
+      </div>
+    </div>
+
+    <div class="event-info">
+      <div class="event-details">
+        <div class="detail">
+          <span>📅</span>
+          <div><small>DATA</small><strong id="eventDate">A definir</strong></div>
+        </div>
+        <div class="detail">
+          <span>📍</span>
+          <div><small>LOCAL</small><strong id="eventLocation">A definir</strong></div>
+        </div>
+      </div>
+
+      <div class="ticket-box">
+        <span class="tag">LOTE DISPONÍVEL</span>
+        <h3>Ingresso individual</h3>
+        <p class="ticket-description">Acesso ao evento para 1 pessoa.</p>
+        <div class="price" id="ticketPrice">R$ 25,00</div>
+
+        <div class="quantity-control">
+          <button id="minusBtn" aria-label="Diminuir quantidade">−</button>
+          <span id="quantity">1</span>
+          <button id="plusBtn" aria-label="Aumentar quantidade">+</button>
+        </div>
+
+        <div class="total-row">
+          <span>Total</span>
+          <strong id="total">R$ 25,00</strong>
+        </div>
+
+        <button class="buy-button" id="buyBtn">COMPRAR INGRESSOS ↗</button>
+        <small class="secure-text">Pagamento seguro • confirmação após pagamento</small>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="about-section">
+  <span class="tag">NOSSA ESSÊNCIA</span>
+  <h2>MAIS QUE CARROS.<br><span>UMA IRMANDADE.</span></h2>
+  <p>Uma união movida pela paixão automotiva. Cada encontro, cada projeto,
+  cada carro conta uma história. Aqui, o respeito e a cultura vêm primeiro.</p>
+</section>
+
+<footer>
+  <div class="footer-logo">IRMANDADE <span>DOS BAIXOS</span></div>
+  <p>© 2026 Irmandade dos Baixos — Todos os direitos reservados.</p>
+  <div class="social-links">
+    <a href="https://instagram.com/" target="_blank" rel="noopener">INSTAGRAM</a>
+  </div>
+</footer>
+
+<!-- MODAL DE COMPRA -->
+<div class="modal" id="checkoutModal">
+  <div class="modal-content">
+    <button class="close-modal" id="closeModal">×</button>
+    <span class="tag">RESERVA DE INGRESSOS</span>
+    <h2>SEUS DADOS</h2>
+    <p>Preencha seus dados para continuar para o pagamento.</p>
+
+    <form id="checkoutForm">
+      <label>Nome completo</label>
+      <input type="text" id="customerName" placeholder="Seu nome completo" required>
+
+      <label>WhatsApp</label>
+      <input type="tel" id="customerPhone" placeholder="(00) 00000-0000" required>
+
+      <label>E-mail</label>
+      <input type="email" id="customerEmail" placeholder="seu@email.com" required>
+
+      <div class="checkout-summary">
+        <span id="summaryQuantity">1 ingresso</span>
+        <strong id="summaryTotal">R$ 25,00</strong>
+      </div>
+
+      <button class="buy-button" type="submit">IR PARA PAGAMENTO</button>
+    </form>
+    <small class="secure-text">Seus dados serão utilizados para o processamento do pedido.</small>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
